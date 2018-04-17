@@ -1,0 +1,74 @@
+/*font*/
+
+@font-face
+{
+	font-family: Walkway;
+	src: url(Walkway/Walkway_UltraBold.ttf);
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url(https://fonts.gstatic.com/s/roboto/v18/CWB0XYA8bzo0kSThX0UTuA.woff2);
+}
+
+
+/*class*/
+
+body
+{
+	margin: 0px;
+	background-color: #424242;
+}
+
+.side-bar
+{
+	position: fixed !important;
+	overflow: auto;
+	font-family: Roboto;
+	color: #F5F5F5;
+	width: 20%;
+	height: 100%;
+	max-width: 200px;
+	min-width: 100px;
+	background-color: #607D8B;
+	box-shadow: 5px 0px 5px rgba(0, 0, 0, .75);
+}
+
+.static--sub--side-bar
+{
+	display: block;
+	padding: 15px 0px 15px 15px;
+	margin: 0px 0px 10px 0px;
+}
+
+.sub--side-bar
+{
+	display: block;
+	text-decoration: none;
+	color: #F5F5F5;
+	padding: 15px 0px 15px 15px;
+	margin: 0px 0px 10px 0px;
+	display: block;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, .75);
+	transition-duration: .5s;
+}
+
+.sub--side-bar:hover
+{
+	background-color: #78909C;
+	box-shadow: 0px 0px 5px #000000;
+
+}
+
+.center
+{
+	display:block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.script
+{
+	display: block !important;
+	margin: 0px auto;
+}
