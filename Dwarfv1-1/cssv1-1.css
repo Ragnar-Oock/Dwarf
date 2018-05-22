@@ -1,74 +1,96 @@
 /*font*/
-
-@font-face
-{
-	font-family: Walkway;
-	src: url(Walkway/Walkway_UltraBold.ttf);
-}
-
-@font-face {
-	font-family: 'Roboto';
-	src: url(https://fonts.gstatic.com/s/roboto/v18/CWB0XYA8bzo0kSThX0UTuA.woff2);
-}
-
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 /*class*/
 
-body
-{
+/*area*/
+body {
 	margin: 0px;
-	background-color: #424242;
+  width: 100vw;
+  height: 100vh;
+	background-color: #121212;
 }
-
-.side-bar
-{
-	position: fixed !important;
+#side-bar {
+	position: fixed;
+	z-index: 1;
+	padding-top: 30px;
 	overflow: auto;
+	left: 0px;
 	font-family: Roboto;
-	color: #F5F5F5;
-	width: 20%;
+	font-weight: 500;
+	color: #cfd8d0;
+	width: 200px;
 	height: 100%;
-	max-width: 200px;
-	min-width: 100px;
-	background-color: #607D8B;
-	box-shadow: 5px 0px 5px rgba(0, 0, 0, .75);
+	background-color: #1c1c1c;
+	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .25);
 }
-
-.static--sub--side-bar
-{
+.menuHide {
+	background: white;
+}
+.static--sub--side-bar {
 	display: block;
+	font-family: Roboto;
+	font-weight: 500;
+	size: 25px;
 	padding: 15px 0px 15px 15px;
-	margin: 0px 0px 10px 0px;
+	margin: 10px 0px 0px 0px;
 }
-
-.sub--side-bar
-{
+.sub--side-bar {
 	display: block;
 	text-decoration: none;
-	color: #F5F5F5;
+	size: 20px;
+	color: #cfd8d0;
 	padding: 15px 0px 15px 15px;
 	margin: 0px 0px 10px 0px;
 	display: block;
-	box-shadow: 0px 0px 0px rgba(0, 0, 0, .75);
-	transition-duration: .5s;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, .25);
+	transition: background-color 300ms ease-in-out,
+  box-shadow 300ms ease-in-out,
+  padding-left 300ms ease-in-out;
 }
-
-.sub--side-bar:hover
-{
-	background-color: #78909C;
+.sub--side-bar:hover {
+	background-color: #434343;
 	box-shadow: 0px 0px 5px #000000;
-
+  padding-left: 20px;
 }
-
-.center
-{
-	display:block;
-	text-align: center;
-	vertical-align: middle;
+#boutonMenu {
+	display: block;
+	position: absolute;
+	cursor: pointer;
+  width: 35px;
+	height: 50px;
+	z-index: 2;
 }
-
-.script
-{
-	display: block !important;
-	margin: 0px auto;
+#menuBar1, #menuBar2, #menuBar3 {
+	width: 35px;
+	height: 5px;
+	background-color: white;
+	margin: 6px 0px;
+	transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+}
+.change #menuBar1 {
+	-webkit-transform: rotate(-45deg) translate(-8px, 4px);
+	transform: rotate(-45deg) translate(-8px, 4px);
+}
+.change #menuBar2 {
+	opacity: 0;
+}
+.change #menuBar3 {
+	-webkit-transform: rotate(45deg) translate(-11px, -8px);
+  transform: rotate(45deg) translate(-11px, -8px);
+}
+.separator {
+	background-color: #263238;
+	transform: translateX(5%);
+	width: 90%;
+	height: 1px;
+}
+.script {
+	position: absolute;
+	z-index: 0;
+	display: block;
+	top: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 300px;
 }
