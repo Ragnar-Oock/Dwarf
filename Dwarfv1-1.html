@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>Google</title>
+		<link rel="icon" href="https://www.google.fr/images/branding/product/ico/googleg_lodp.ico">
+		<link rel="stylesheet" href="cssv1-1.css">
+	<body>
+		<div id="boutonMenu" onclick="menu('boutonMenu','side-bar')">
+			<div id="menuBar1"></div>
+			<div id="menuBar2"></div>
+			<div id="menuBar3"></div>
+		</div>
+		<div id="side-bar">
+			<div class="static--sub--side-bar">
+				MONERO
+			</div>
+			<a href="https://coinhive.com/dashboard" target="_blank" class="sub--side-bar"> Dashboard </a>
+			<a href="https://www.coingecko.com/fr/graphiques_cours/monero/eur" target="_blank" class="sub--side-bar"> CoinGecko </a>
+			<div class="separator">
+			</div>
+			<div class="static--sub--side-bar">
+				MEDIAS
+			</div>
+			<a href="https://discordapp.com/channels/@me" target="_blank" class="sub--side-bar"> Discord </a>
+			<a href="https://www.youtube.com/" target="_blank" class="sub--side-bar"> YouTube </a>
+			<a href="https://tweetdeck.twitter.com/" target="_blank" class="sub--side-bar"> TweetDeck </a>
+			<a href="https://www.twitch.tv/" target="_blank" class="sub--side-bar"> Twitch </a>
+			<div class="separator">
+			</div>
+			<div class="static--sub--side-bar">
+				OTHERS
+			</div>
+			<a href="https://www.google.com/" target="_blank" class="sub--side-bar"> Google </a>
+			<a href="http://sio.lyc-lecastel.fr/doku.php" target="_blank" class="sub--side-bar"> Wiki Lyc&eacute;e </a>
+			<a href="https://github.com/UgoDumontot" target="_blank" class="sub--side-bar"> Git Hub </a>
+		</div>
+		<div class="script">
+			<script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
+			<div class="coinhive-miner"
+				style="width: 700px; height: 200px;"
+				data-key="Gagln9mSYiOzoSqJ7qTdgOdnn9h8hqUN"
+				data-autostart="false"
+				data-whitelabel="true"
+				data-background="#00000000"
+				data-text="#cfd8d0"
+				data-action="#fa6800"
+				data-threads="4">
+				<em>Loading...</em>
+			</div>
+		</div>
+	</body>
+	<script>
+		function menu(x,y) {
+			document.getElementById(x).classList.toggle("change");
+			document.getElementById(y).classList.toggle("menuHide");
+		}
+	</script>
+</html>

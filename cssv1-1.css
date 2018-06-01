@@ -1,0 +1,99 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+/*class*/
+
+/*area*/
+body {
+	margin: 0px;
+  width: 100vw;
+  height: 100vh;
+	background-color: #121212;
+}
+#side-bar {
+	position: fixed;
+	z-index: 1;
+	padding-top: 45px;
+	overflow: auto;
+	left: -210px;
+	font-family: Roboto;
+	font-weight: 500;
+	color: #cfd8d0;
+	width: 200px;
+	height: 100%;
+	background-color: #1c1c1c;
+	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .25);
+	transition: left 300ms ease-in-out;
+}
+#side-bar.menuHide {
+	left: 0px;
+}
+.static--sub--side-bar {
+	display: block;
+	font-family: Roboto;
+	font-weight: 500;
+	size: 25px;
+	padding: 15px 0px 15px 15px;
+	margin: 10px 0px 0px 0px;
+}
+.sub--side-bar {
+	display: block;
+	text-decoration: none;
+	size: 20px;
+	color: #cfd8d0;
+	padding: 15px 0px 15px 15px;
+	margin: 0px 0px 10px 0px;
+	display: block;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, .25);
+	transition: background-color 300ms ease-in-out,
+  box-shadow 300ms ease-in-out,
+  padding-left 300ms ease-in-out;
+}
+.sub--side-bar:hover {
+	background-color: #434343;
+	box-shadow: 0px 0px 5px #000000;
+  padding-left: 20px;
+}
+#boutonMenu {
+	left: 15px;
+	top: 15px;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+  width: 35px;
+	height: 50px;
+	z-index: 2;
+}
+#menuBar1, #menuBar2, #menuBar3 {
+	width: 35px;
+	height: 5px;
+	background-color: white;
+	margin: 6px 0px;
+	transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+}
+.change #menuBar1 {
+	-webkit-transform: rotate(-45deg) translate(-8px, 4px);
+	transform: rotate(-45deg) translate(-8px, 4px);
+}
+.change #menuBar2 {
+	opacity: 0;
+}
+.change #menuBar3 {
+	-webkit-transform: rotate(45deg) translate(-11px, -8px);
+  transform: rotate(45deg) translate(-11px, -8px);
+}
+.separator {
+	background-color: #263238;
+	transform: translateX(5%);
+	width: 90%;
+	height: 1px;
+}
+.script {
+	position: absolute;
+	z-index: 0;
+	display: block;
+	top: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 300px;
+}
